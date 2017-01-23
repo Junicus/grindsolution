@@ -23,6 +23,7 @@ namespace GrindSolution
                 grindProcess.StartInfo.FileName = grindPath;
                 grindProcess.StartInfo.Arguments = $"/DATE {dateFolder}";
                 grindProcess.StartInfo.CreateNoWindow = true;
+                grindProcess.Start();
             }
             catch (Exception ex)
             {
